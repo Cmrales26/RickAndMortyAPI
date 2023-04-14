@@ -29,7 +29,7 @@ const buscarDato = async () => {
             `
         }
         card_container.innerHTML = listado;
-        personajes.innerHTML = `<option selected="selected">Ver Todos</option> ${personaje}`
+        personajes.innerHTML = `<option selected="selected">Watch All</option> ${personaje}`
     }
     catch (err) {
         console.log(err)
