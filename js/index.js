@@ -61,7 +61,7 @@ const optonerNombre = () => {
     return nombre.value;
 }
 
-nombre.addEventListener("click", (event) => {
+nombre.addEventListener("change", (event) => {
     if (optonerNombre() != "Ver Todos") {
         veruno(optonerNombre())
     } else {
