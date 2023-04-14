@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Orbitron:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1.3% 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+.name h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 21px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.logo img{
+    width: 100%;
+}
+.form-select{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+}
+.container{
+    margin-top: 13rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0% 2%;
+    margin-bottom: 3%;
+}
+.card{
+    margin-bottom: 2rem;
+    grid-gap: 20%;
+    place-self: center;
+    width: 20rem;
+}
+.footer{
+    padding: 3% 10%;
+    background: #c20000;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.personal{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-social{
+    width: 16rem;
+    font-family: 'Orbitron';
+    color: black;
+}
+.name-social a{
+    color: white;
+}
+.api-ref > hr{
+    border: none;
+    background-color: white;
+    height: 2px;
+}
+.api-ref p{
+    text-align: right;
+    color: black;
+    font-size: 16px;
+    font-family: 'Orbitron';
+}
+.api-ref > p a{
+    color: white;
+}
+.contact{
+    display: flex;
+    gap: 20%;
+    margin-right: 5%;
+}
+.fa-brands{
+    color: white;
+    font-size: 50px;
+}
+@media screen and (max-width: 425px){
+    .header{
+        text-align: center;
+        display: block;
+        padding: 5%;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+        margin: 0  auto;
+        margin-bottom:1rem;
+    }
+    .footer{
+        text-align: center;
+    }
+    .personal{
+        display: block;
+    }
+    .name-social{
+        width: 100%;
+    }
+    .name-social h3{
+        font-size: 18px;
+    }
+    .contact{
+        margin-top: 1rem;
+        gap: 4%;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-brands{
+        font-size: 40px;
+    }
+    .api-ref p{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 320px) {
+    .card{
+        width: initial;
+    }
+}
