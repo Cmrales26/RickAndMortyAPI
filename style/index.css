@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 16px;
 }
 .container{
-    min-height: 55vh;
+    min-height: 60vh;
     margin-top: 13rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
